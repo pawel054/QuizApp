@@ -40,7 +40,7 @@ namespace QuizApp
                 currentScore = 0;
                 currentQuestionIndex = 0;
                 times.Clear();
-                starGameView.IsVisible = false;
+                startGameView.IsVisible = false;
                 finishGameView.IsVisible = false;
                 gameView.IsVisible = true;
                 ShowNextQuestion();
