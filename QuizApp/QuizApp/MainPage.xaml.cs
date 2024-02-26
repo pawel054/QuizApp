@@ -20,6 +20,13 @@ namespace QuizApp
         public MainPage()
         {
             InitializeComponent();
+            GenerateQuestions();
+        }
+
+        private void GenerateQuestions()
+        {
+            Random random = new Random();
+            questions = Enumerable.Range(0,5).Select(_=> random.Next(1,1001)).ToList();
         }
     }
 }
