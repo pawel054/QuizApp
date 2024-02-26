@@ -46,5 +46,12 @@ namespace QuizApp
                 ShowNextQuestion();
             }
         }
+
+        private void PlayAgainButton(object sender, EventArgs e)
+        {
+            finishGameView.IsVisible = false;
+            startGameView.IsVisible = true;
+            GenerateQuestions();
+        }
     }
 }
